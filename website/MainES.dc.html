@@ -364,7 +364,7 @@
           <textarea name="details" required rows="4" placeholder="¿Con qué estás trabajando y qué te gustaría mejorar con IA?" style="width:100%; background:#0A0E1A; border:1px solid rgba(255,255,255,0.14); border-radius:10px; padding:12px 14px; color:#F5F7FB; font-size:14.5px; font-family:'Manrope',sans-serif; resize:vertical;"></textarea>
         </div>
         <button type="submit" class="btn-primary" style="background:linear-gradient(135deg,#22D3EE,#6366F1 55%,#A855F7); color:#0A0E1A; font-weight:700; font-size:15px; padding:16px 32px; border-radius:10px; border:none; cursor:pointer; font-family:'Manrope',sans-serif;">Reserva una consulta gratuita</button>
-        <span style="font-size:12.5px; color:#7C8798;">Esto abre tu aplicación de correo con los datos completados, dirigido a info@aibuildapp.net.</span>
+        <span style="font-size:12.5px; color:#7C8798;">Esto abre tu aplicación de correo con los datos completados, dirigido a info@aibuildapp.net.pe.</span>
       </form>
     </div>
   </div>
@@ -387,7 +387,7 @@
         </div>
         <div style="display:flex; flex-direction:column; gap:10px;">
           <span style="font-size:13px; font-weight:700; color:#7C8798; text-transform:uppercase; letter-spacing:0.06em;">Contacto</span>
-          <a class="nav-link" href="mailto:info@aibuildapp.net" style="color:#B9C2D6;">info@aibuildapp.net</a>
+          <a class="nav-link" href="mailto:info@aibuildapp.net.pe" style="color:#B9C2D6;">info@aibuildapp.net.pe</a>
         </div>
       </div>
     </div>
@@ -464,10 +464,10 @@ class Component extends DCLogic {
     if (/(automat|proceso|flujo)/.test(t)) return 'Identificamos los pasos manuales de tu negocio y los automatizamos — desde flujos internos hasta operaciones de cara al cliente.';
     if (/(redise|sitio|app|reconstru)/.test(t)) return 'Reconstruimos sitios web y apps existentes con funciones de IA integradas — búsqueda más inteligente, personalización, chat, recomendaciones — sin empezar de cero.';
     if (/(precio|costo|presupuesto|cuánto|cuanto)/.test(t)) return 'El precio depende del alcance, así que el mejor siguiente paso es una consulta gratuita — revisamos qué tienes y qué necesitas.';
-    if (/(reserva|consulta|contacto|correo|hablar|llamar)/.test(t)) return 'Puedes completar el formulario justo arriba de este chat, o escribir directamente a info@aibuildapp.net.';
+    if (/(reserva|consulta|contacto|correo|hablar|llamar)/.test(t)) return 'Puedes completar el formulario justo arriba de este chat, o escribir directamente a info@aibuildapp.net.pe.';
     if (/(gracias)/.test(t)) return '¡De nada! ¿Hay algo más en lo que pueda ayudarte?';
     if (/\b(hola|buenas)\b/.test(t)) return '¡Hola! ¿Qué te gustaría saber — rediseños, automatización, agentes o IoT?';
-    return 'Soy Edward, un asistente simple integrado en esta página, así que puede que no capte todo. Para algo específico, el formulario de consulta gratuita más arriba o info@aibuildapp.net te pondrá en contacto directo con el equipo.';
+    return 'Soy Edward, un asistente simple integrado en esta página, así que puede que no capte todo. Para algo específico, el formulario de consulta gratuita más arriba o info@aibuildapp.net.pe te pondrá en contacto directo con el equipo.';
   }
 
   renderVals() {
@@ -514,7 +514,7 @@ class Component extends DCLogic {
           details
         ].filter((x) => x !== null);
         const body = lines.join('\n');
-        const mailto = 'mailto:info@aibuildapp.net?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        const mailto = 'mailto:info@aibuildapp.net.pe?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
         window.location.href = mailto;
       }
     };

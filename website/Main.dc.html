@@ -364,7 +364,7 @@
           <textarea name="details" required rows="4" placeholder="What are you working with, and what would you like to add AI to?" style="width:100%; background:#0A0E1A; border:1px solid rgba(255,255,255,0.14); border-radius:10px; padding:12px 14px; color:#F5F7FB; font-size:14.5px; font-family:'Manrope',sans-serif; resize:vertical;"></textarea>
         </div>
         <button type="submit" class="btn-primary" style="background:linear-gradient(135deg,#22D3EE,#6366F1 55%,#A855F7); color:#0A0E1A; font-weight:700; font-size:15px; padding:16px 32px; border-radius:10px; border:none; cursor:pointer; font-family:'Manrope',sans-serif;">Book a free consultation</button>
-        <span style="font-size:12.5px; color:#7C8798;">This opens your email app with the details filled in, addressed to info@aibuildapp.net.</span>
+        <span style="font-size:12.5px; color:#7C8798;">This opens your email app with the details filled in, addressed to info@aibuildapp.net.pe.</span>
       </form>
     </div>
   </div>
@@ -387,7 +387,7 @@
         </div>
         <div style="display:flex; flex-direction:column; gap:10px;">
           <span style="font-size:13px; font-weight:700; color:#7C8798; text-transform:uppercase; letter-spacing:0.06em;">Contact</span>
-          <a class="nav-link" href="mailto:info@aibuildapp.net" style="color:#B9C2D6;">info@aibuildapp.net</a>
+          <a class="nav-link" href="mailto:info@aibuildapp.net.pe" style="color:#B9C2D6;">info@aibuildapp.net.pe</a>
         </div>
       </div>
     </div>
@@ -464,10 +464,10 @@ class Component extends DCLogic {
     if (/(automat|process|workflow)/.test(t)) return "We map the manual steps in your business and automate them — from back-office workflows to customer-facing operations.";
     if (/(redesign|website|app|rebuild)/.test(t)) return "We rebuild existing websites and apps with AI features built in — smarter search, personalization, chat, recommendations — without starting from zero.";
     if (/(price|cost|budget|how much)/.test(t)) return "Pricing depends on scope, so the best next step is a free consultation — we'll look at what you have and what you need.";
-    if (/(book|consult|contact|email|talk|call)/.test(t)) return "You can fill out the form just above this chat, or email info@aibuildapp.net directly.";
+    if (/(book|consult|contact|email|talk|call)/.test(t)) return "You can fill out the form just above this chat, or email info@aibuildapp.net.pe directly.";
     if (/(thank)/.test(t)) return "You're welcome! Anything else I can help with?";
     if (/\b(hi|hello|hey)\b/.test(t)) return "Hi there! What would you like to know — redesigns, automation, agents, or IoT?";
-    return "I'm Edward, a simple assistant built into this page, so I might not catch everything. For anything specific, the free consultation form above or info@aibuildapp.net will reach the team directly.";
+    return "I'm Edward, a simple assistant built into this page, so I might not catch everything. For anything specific, the free consultation form above or info@aibuildapp.net.pe will reach the team directly.";
   }
 
   renderVals() {
@@ -514,7 +514,7 @@ class Component extends DCLogic {
           details
         ].filter((x) => x !== null);
         const body = lines.join('\n');
-        const mailto = 'mailto:info@aibuildapp.net?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        const mailto = 'mailto:info@aibuildapp.net.pe?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
         window.location.href = mailto;
       }
     };
